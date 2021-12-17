@@ -1,165 +1,161 @@
-    /*reset start*/
-    
-    #id {
-        margin: 0px;
-        height: 0px;
-        width: 0px;
-    }
-    
-    span {
-        margin: 0px;
-        padding: 0px;
-        align-items: center;
-    }
-    
-    button {
-        border: 1px solid #fff;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    body {
-        margin: 0px;
-    }
-    
-    ul {
-        list-style-type: none;
-        font-family: 'Montserrat', sans-serif;
-        padding: 0px;
-        margin: 0px;
-        cursor: pointer;
-    }
-    
-    i {
-        color: white;
-        font-weight: bolder;
-        size: 20px;
-    }
-    
-    h1,
-    p {
-        margin: 0px;
-    }
-    
-    h1 {
-        font-size: 80px;
-        color: ivory;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        margin-right: 50px;
-        z-index: 10;
-    }
-    
-    p {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 100;
-        color: ivory;
-        padding-left: 20%;
-        font-family: 'Titillium Web', sans-serif;
-        letter-spacing: 3px;
-    }
-    
-    button {
-        margin: 10px;
-        background: none;
-        color: ivory;
-        font-size: 14px;
-        margin-left: 35%;
-        padding: 15px 35px 15px 35px;
-        font-family: 'Montserrat', sans-serif;
-        font-stretch: wider;
-        font-weight: 600;
-    }
-    
-    .container {
-        width: 1200px;
-        margin: 0 auto;
-    }
-    
-    #main {
-        width: 100%;
-        height: 708px;
-        margin: 0px auto;
-        background-image: url(/images/backgroundphoto.jpg);
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    }
-    
-    .main-overlay {
-        width: 100%;
-        height: inherit;
-        background: black rgba(0, 0, 0, 0.8);
-        position: absolute;
-        z-index: 1;
-    }
-    
-    .main-container {
-        width: 100%;
-        margin: 0px auto;
-        height: inherit;
-    }
-    
-    .main-slide-arrows {
-        width: 100%;
-        bottom: 45%;
-        position: absolute;
-        justify-content: center;
-        display: flex;
-        height: 100px;
-        color: ivory;
-    }
-    
-    .main-navbar {
-        justify-content: space-between;
-        padding-top: 20px 0px;
-        align-items: center;
-        display: flex;
-        width: 1200px;
-        height: 90px;
-        z-index: 5;
-    }
-    
-    .main-logo {
-        cursor: pointer;
-        letter-spacing: 0.5px;
-        padding-bottom: 5px;
-        padding-left: 30px;
-        color: ivory;
-        font-weight: 800;
-        font-size: 23px;
-        font-family: 'Montserrat', sans-serif;
-        font-stretch: ultra-expanded;
-        width: 70px;
-        height: 30px;
-    }
-    
-    .main-nav {
-        color: ivory;
-        letter-spacing: -0.5px;
-        font-weight: 600;
-        font-size: 14px;
-        padding-top: 20px;
-        padding-right: 40px;
-        font-stretch: wider;
-        word-spacing: 5px;
-        display: flex;
-        width: 600px;
-        height: 40px;
-        justify-content: space-around;
-        font-weight: 1900;
-    }
-    
-    .main-header {
-        margin: 0px auto;
-    }
-    
-    .main-content {
-        position: absolute;
-        left: 25%;
-        top: 40%;
-    }
-    
-    .slider-boxes {
-        border: ivory;
-    }
+/*reset start*/
+
+
+/*main section starts*/
+
+#id {
+    margin: 0;
+    height: 0;
+    width: 0;
+}
+
+body {
+    margin: 0px;
+    font-size: 12px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content h1 {
+    font-size: 80px;
+    color: ivory;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    z-index: 10;
+    transform: scale(1.1, 1.05);
+}
+
+.main-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: ivory;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 3px;
+}
+
+.btn1 {
+    border: 1px solid #fff;
+    background: none;
+    margin-top: 35px;
+    color: ivory;
+    font-size: 14px;
+    padding: 15px 35px 15px 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: wider;
+    font-weight: 600;
+    transition: color 0.4s linear;
+    position: relative;
+    transition: 0.6s;
+}
+
+.btn1:hover {
+    background: rgb(105, 104, 104);
+    content: "";
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+h1,
+p {
+    margin: 0px;
+}
+
+.first-slogan {
+    transform: translate(10px, 20px);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main {
+    height: 100vh;
+    margin: 0px auto;
+    background-image: url(/images/backgroundphoto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-overlay {
+    width: 100%;
+    height: inherit;
+    background: black rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 1;
+}
+
+.main-navbar {
+    padding-top: 20px 0px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 5;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding-top: 30px;
+}
+
+.main-logo {
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    color: ivory;
+    font-weight: 800;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: ultra-expanded;
+}
+
+.main-nav {
+    color: ivory;
+    width: 700px;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    font-size: 14px;
+    font-stretch: wider;
+    word-spacing: 5px;
+    display: flex;
+    font-weight: 600;
+    justify-content: space-around;
+}
+
+.main-content {
+    position: absolute;
+    text-align: center;
+    margin-top: 15%;
+    width: inherit;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+
+/*main section ends*/
+
+.privileges {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    float: right;
+}
