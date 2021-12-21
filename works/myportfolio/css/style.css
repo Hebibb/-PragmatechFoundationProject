@@ -1,431 +1,511 @@
-            /*reset start*/
-            /*main section starts*/
-            
-            #id {
-                margin: 0;
-                height: 0;
-                width: 0;
-            }
-            
-            .main-content h1 {
-                font-size: 80px;
-                color: ivory;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                z-index: 10;
-                transform: scale(1.1, 1.05);
-                margin: auto;
-            }
-            
-            .first-slogan {
-                width: max-content;
-            }
-            
-            .main-content p {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 1.5em;
-                color: ivory;
-                font-family: 'Titillium Web', sans-serif;
-                letter-spacing: 3px;
-            }
-            
-            .btn1 {
-                border: 1px solid #fff;
-                background: none;
-                margin-top: 35px;
-                color: ivory;
-                font-size: 14px;
-                padding: 15px 35px 15px 35px;
-                font-family: 'Montserrat', sans-serif;
-                font-stretch: wider;
-                font-weight: 600;
-                transition: color 0.4s linear;
-                position: relative;
-                transition: 0.6s;
-            }
-            
-            .btn1:hover {
-                background: rgb(105, 104, 104);
-                content: "";
-                border: none;
-                cursor: pointer;
-            }
-            
-            body {
-                margin: 0px;
-            }
-            
-            ul {
-                list-style-type: none;
-                font-family: 'Montserrat', sans-serif;
-                padding: 0px;
-                margin: 0px;
-                cursor: pointer;
-            }
-            
-            p {
-                margin: 0px;
-            }
-            
-            .container {
-                /* width: 100%; */
-                width: 1200px;
-                margin: 0 auto;
-            }
-            
-            #main {
-                height: 100vh;
-                margin: 0px auto;
-                background-image: url(/images/backgroundphoto.jpg);
-                background-position: center;
-                background-size: cover;
-            }
-            
-            .main-overlay {
-                width: inherit;
-                height: inherit;
-                background: black rgba(0, 0, 0, 0.8);
-                position: absolute;
-                z-index: 1;
-            }
-            
-            .main-navbar {
-                height: 90px;
-                display: flex;
-                justify-content: space-around;
-                z-index: 5;
-                position: fixed;
-                box-sizing: border-box;
-                background-color: rgba(0, 0, 0, 0.6);
-                width: 100%;
-                align-items: center;
-            }
-            
-            .main-logo {
-                cursor: pointer;
-                letter-spacing: 0.5px;
-                color: ivory;
-                font-weight: 800;
-                font-size: 23px;
-                font-family: 'Montserrat', sans-serif;
-                font-stretch: ultra-expanded;
-            }
-            
-            .main-nav {
-                color: ivory;
-                width: 700px;
-                letter-spacing: -0.5px;
-                font-weight: 600;
-                font-size: 14px;
-                font-stretch: wider;
-                word-spacing: 5px;
-                display: flex;
-                justify-content: space-around;
-            }
-            
-            .main-content {
-                position: absolute;
-                text-align: center;
-                box-sizing: border-box;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            /*main section ends*/
-            
-            .container {
-                min-height: 650px;
-            }
-            
-            .skills {
-                display: grid;
-                grid-template-columns: 8fr 4fr;
-                position: relative;
-                transform: translateY(20%);
-            }
-            
-            .header {
-                font-family: 'Montserrat', sans-serif;
-                color: rgb(44, 44, 44);
-                font-size: 1.7em;
-                font-stretch: narrower;
-            }
-            
-            .myskills-header {
-                font-family: 'Montserrat', sans-serif;
-                color: rgb(99, 98, 98);
-                font-size: 1.2em;
-                font-stretch: narrower;
-            }
-            
-            .skills-info {
-                font-family: 'Montserrat', sans-serif;
-                color: rgb(99, 98, 98);
-                font-family: 'Titillium Web', sans-serif;
-                letter-spacing: 1px;
-                font-size: 13px;
-                font-weight: 700;
-                line-height: 30px;
-            }
-            
-            .my-portrait {
-                margin-top: 11px;
-            }
-            /*second section end*/
-            
-            #third-section {
-                height: 1000px;
-                margin: 0px auto;
-                background-color: rgb(231, 231, 231);
-                background-position: center;
-                background-size: cover;
-            }
-            
-            .myservices-container {
-                width: 1200px;
-                min-height: 1000px;
-                margin: 0 auto;
-                box-sizing: border-box;
-                background-color: rgb(231, 231, 231);
-            }
-            
-            .thirdsection-header {
-                padding-top: 5%;
-                align-items: center;
-                font-family: 'Montserrat', sans-serif;
-                text-align: center;
-                font-family: 'Lato', sans-serif;
-            }
-            
-            .thirdsection-header h1 {
-                font-size: 2.5em;
-                font-weight: 700;
-                transform: scale(1.2, 1.1);
-                color: rgb(87, 86, 86);
-                word-spacing: 0.1px;
-                font-family: 'Lato', sans-serif;
-            }
-            
-            .myservice-content {
-                font-size: 14px;
-                font-family: 'Lato', sans-serif;
-            }
-            
-            .myservice-grid-chambers {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1fr, 1fr, 1fr;
-                justify-content: space-around;
-                gap: 30px;
-                line-height: 24px;
-                margin-bottom: 30px;
-            }
-            
-            .grid-webdesign,
-            .development,
-            .photography,
-            .branding,
-            .support,
-            .marketing {
-                background-color: ivory;
-                text-align: center;
-                padding: 50px 10px;
-                padding-bottom: 50px;
-                box-sizing: border-box;
-                font-family: 'Lato', sans-serif;
-            }
-            /*thirdsection ends*/
-            
-            #my-portfolio-section {
-                height: 1000px;
-                margin: 0px auto;
-                background-position: center;
-                background-size: cover;
-            }
-            
-            .myportfolio-container {
-                width: 1200px;
-                min-height: 1200px;
-                margin: 0 auto;
-                margin-top: 100px;
-            }
-            
-            .myportfolio-header {
-                width: 600px;
-                align-items: center;
-                text-align: center;
-                margin: 0 auto;
-            }
-            
-            .myportfolio-header h1 {
-                font-size: 35px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                position: relative;
-                color: rgb(59, 59, 59);
-            }
-            
-            .bottom-bordermp {
+                                /*reset start*/
+                                /*main section starts*/
+                                
+                                #id {
+                                    margin: 0;
+                                    height: 0;
+                                    width: 0;
+                                }
+                                
+                                .main-content h1 {
+                                    font-size: 80px;
+                                    color: ivory;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 800;
+                                    z-index: 10;
+                                    transform: scale(1.1, 1.05);
+                                    margin: auto;
+                                }
+                                
+                                .first-slogan {
+                                    width: max-content;
+                                }
+                                
+                                .main-content p {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-size: 1.5em;
+                                    color: ivory;
+                                    font-family: 'Titillium Web', sans-serif;
+                                    letter-spacing: 3px;
+                                }
+                                
+                                .btn1 {
+                                    border: 1px solid #fff;
+                                    background: none;
+                                    margin-top: 35px;
+                                    color: ivory;
+                                    font-size: 14px;
+                                    padding: 15px 35px 15px 35px;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-stretch: wider;
+                                    font-weight: 600;
+                                    transition: color 0.4s linear;
+                                    position: relative;
+                                    transition: 0.6s;
+                                }
+                                
+                                .btn1:hover {
+                                    background: rgb(105, 104, 104);
+                                    content: "";
+                                    border: none;
+                                    cursor: pointer;
+                                }
+                                
+                                body {
+                                    margin: 0px;
+                                }
+                                
+                                ul {
+                                    list-style-type: none;
+                                    font-family: 'Montserrat', sans-serif;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    cursor: pointer;
+                                }
+                                
+                                p {
+                                    margin: 0px;
+                                }
+                                
+                                .container {
+                                    /* width: 100%; */
+                                    width: 1200px;
+                                    margin: 0 auto;
+                                }
+                                
+                                #main {
+                                    height: 100vh;
+                                    margin: 0px auto;
+                                    background-image: url(/images/backgroundphoto.jpg);
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                
+                                .main-overlay {
+                                    width: inherit;
+                                    height: inherit;
+                                    background: black rgba(0, 0, 0, 0.8);
+                                    position: absolute;
+                                    z-index: 1;
+                                }
+                                
+                                .main-navbar {
+                                    height: 90px;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    z-index: 5;
+                                    position: fixed;
+                                    box-sizing: border-box;
+                                    background-color: rgba(0, 0, 0, 0.6);
+                                    width: 100%;
+                                    align-items: center;
+                                }
+                                
+                                .main-logo {
+                                    cursor: pointer;
+                                    letter-spacing: 0.5px;
+                                    color: ivory;
+                                    font-weight: 800;
+                                    font-size: 23px;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-stretch: ultra-expanded;
+                                }
+                                
+                                .main-nav {
+                                    color: ivory;
+                                    width: 700px;
+                                    letter-spacing: -0.5px;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    font-stretch: wider;
+                                    word-spacing: 5px;
+                                    display: flex;
+                                    justify-content: space-around;
+                                }
+                                
+                                .main-content {
+                                    position: absolute;
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                                /*main section ends*/
+                                
+                                .container {
+                                    min-height: 650px;
+                                }
+                                
+                                .skills {
+                                    display: grid;
+                                    grid-template-columns: 8fr 4fr;
+                                    position: relative;
+                                    transform: translateY(20%);
+                                }
+                                
+                                .header {
+                                    font-family: 'Montserrat', sans-serif;
+                                    color: rgb(44, 44, 44);
+                                    font-size: 1.7em;
+                                    font-stretch: narrower;
+                                }
+                                
+                                .myskills-header {
+                                    font-family: 'Montserrat', sans-serif;
+                                    color: rgb(99, 98, 98);
+                                    font-size: 1.2em;
+                                    font-stretch: narrower;
+                                }
+                                
+                                .skills-info {
+                                    font-family: 'Montserrat', sans-serif;
+                                    color: rgb(99, 98, 98);
+                                    font-family: 'Titillium Web', sans-serif;
+                                    letter-spacing: 1px;
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    line-height: 30px;
+                                }
+                                
+                                .my-portrait {
+                                    margin-top: 11px;
+                                }
+                                /*second section end*/
+                                
+                                #third-section {
+                                    height: 1000px;
+                                    margin: 0px auto;
+                                    background-color: rgb(231, 231, 231);
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                
+                                .myservices-container {
+                                    width: 1200px;
+                                    min-height: 1000px;
+                                    margin: 0 auto;
+                                    box-sizing: border-box;
+                                    background-color: rgb(231, 231, 231);
+                                }
+                                
+                                .thirdsection-header {
+                                    padding-top: 5%;
+                                    align-items: center;
+                                    font-family: 'Montserrat', sans-serif;
+                                    text-align: center;
+                                    font-family: 'Lato', sans-serif;
+                                }
+                                
+                                .thirdsection-header h1 {
+                                    font-size: 2.5em;
+                                    font-weight: 700;
+                                    transform: scale(1.2, 1.1);
+                                    color: rgb(87, 86, 86);
+                                    word-spacing: 0.1px;
+                                    font-family: 'Lato', sans-serif;
+                                }
+                                
+                                .myservice-content {
+                                    font-size: 14px;
+                                    font-family: 'Lato', sans-serif;
+                                }
+                                
+                                .myservice-grid-chambers {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    grid-template-rows: 1fr, 1fr, 1fr;
+                                    justify-content: space-around;
+                                    gap: 30px;
+                                    line-height: 24px;
+                                    margin-bottom: 30px;
+                                }
+                                
+                                .grid-webdesign,
+                                .development,
+                                .photography,
+                                .branding,
+                                .support,
+                                .marketing {
+                                    background-color: ivory;
+                                    text-align: center;
+                                    padding: 50px 10px;
+                                    padding-bottom: 50px;
+                                    box-sizing: border-box;
+                                    font-family: 'Lato', sans-serif;
+                                }
+                                /*thirdsection ends*/
+                                
+                                #my-portfolio-section {
+                                    height: 1000px;
+                                    margin: 0px auto;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                
+                                .myportfolio-container {
+                                    width: 1200px;
+                                    min-height: 1200px;
+                                    margin: 0 auto;
+                                    margin-top: 100px;
+                                }
+                                
+                                .myportfolio-header {
+                                    width: 600px;
+                                    align-items: center;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                }
+                                
+                                .myportfolio-header h1 {
+                                    font-size: 35px;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 800;
+                                    position: relative;
+                                    color: rgb(59, 59, 59);
+                                }
+                                
+                                .bottom-bordermp {
+                                    width: 80px;
+                                    border: solid 1px rgb(46, 46, 46);
+                                    background: rgb(92, 92, 92);
+                                    height: 0px;
+                                    position: absolute;
+                                    transform: translate(255px, -18px);
+                                }
+                                
+                                .portfolio-btns {
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    justify-content: space-between;
+                                }
+                                
+                                .myportfolio-content {
+                                    margin-top: 10px;
+                                }
+                                
+                                .btn2 {
+                                    color: white;
+                                    font-family: 'Montserrat', sans-serif;
+                                    padding: 8px 20px;
+                                    border-radius: 2px;
+                                    background-color: rgb(54, 54, 54);
+                                    cursor: pointer;
+                                    margin-right: 18px;
+                                }
+                                
+                                .btn3,
+                                .btn4,
+                                .btn5 {
+                                    font-family: 'Montserrat', sans-serif;
+                                    padding: 10px 20px;
+                                    background: none;
+                                    border-radius: 3px;
+                                    border: rgb(168, 168, 168) 0.2px solid;
+                                    margin-top: 80px;
+                                    transition: color 0.4s linear;
+                                    position: relative;
+                                    transition: 0.3s;
+                                    margin-right: 18px;
+                                }
+                                
+                                .btn3:hover {
+                                    background: rgb(105, 104, 104);
+                                    content: "";
+                                    border: none;
+                                    cursor: pointer;
+                                    color: white;
+                                }
+                                
+                                .btn4:hover {
+                                    background: rgb(105, 104, 104);
+                                    content: "";
+                                    border: none;
+                                    cursor: pointer;
+                                    color: white;
+                                }
+                                
+                                .btn5:hover {
+                                    background: rgb(105, 104, 104);
+                                    content: "";
+                                    border: none;
+                                    cursor: pointer;
+                                    color: white;
+                                }
+                                /*grid starts*/
+                                
+                                .grid-pictures {
+                                    width: 1200px;
+                                    margin-top: 50px;
+                                    box-sizing: border-box;
+                                }
+                                
+                                .cell-1,
+                                .cell-2,
+                                .cell-4,
+                                .cell-6 {
+                                    width: 252px;
+                                    height: 310px;
+                                }
+                                
+                                .cell-3,
+                                .cell-5 {
+                                    width: 555px;
+                                    height: 657px;
+                                }
+                                
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                
+                                .gridbox {
+                                    display: grid;
+                                    margin-top: 50px;
+                                    width: 100%;
+                                    height: 100%;
+                                    gap: 10px;
+                                    grid-template-columns: repeat(4, 3fr);
+                                }
+                                /* .griditems {
+                border: 1px solid black;
+            } */
+                                
+                                .gridbox>div:nth-child(3) {
+                                    grid-column: 3/span 4;
+                                    grid-row: 1/span 3;
+                                }
+                                
+                                .gridbox>div:nth-child(4) {
+                                    grid-column: 1/span 2;
+                                    grid-row: 2/span 3;
+                                }
+                                /*myportfolio-section ends*/
+                                
+                                #ourteam-section {
+                                    height: 500px;
+                                    margin: 0px auto;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                
+                                .ourteam-container {
+                                    width: 1200px;
+                                    min-height: 1200px;
+                                    margin: 0 auto;
+                                    margin-top: 100px;
+                                }
+                                
+                                .ourteam-header {
+                                    width: 600px;
+                                    align-items: center;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                }
+                                
+                                .ourteam-header h2 {
+                                    font-size: 35px;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 800;
+                                    position: relative;
+                                    color: rgb(59, 59, 59);
+                                }
+                                /* .bottom-bordermp {
                 width: 80px;
                 border: solid 1px rgb(46, 46, 46);
                 background: rgb(92, 92, 92);
                 height: 0px;
                 position: absolute;
-                transform: translate(255px, -18px);
-            }
-            
-            .portfolio-btns {
-                font-size: 12px;
-                font-weight: 600;
-                justify-content: space-between;
-            }
-            
-            .myportfolio-content {
-                margin-top: 10px;
-            }
-            
-            .btn2 {
-                color: white;
-                font-family: 'Montserrat', sans-serif;
-                padding: 8px 20px;
-                font-family: 'Montserrat', sans-serif;
-                border-radius: 2px;
-                background-color: rgb(54, 54, 54);
-                cursor: pointer;
-                margin-right: 18px;
-            }
-            
-            .btn3,
-            .btn4,
-            .btn5 {
-                font-family: 'Montserrat', sans-serif;
-                padding: 10px 20px;
-                background: none;
-                border-radius: 3px;
-                border: rgb(168, 168, 168) 0.2px solid;
-                margin-top: 80px;
-                transition: color 0.4s linear;
-                position: relative;
-                transition: 0.3s;
-                margin-right: 18px;
-            }
-            
-            .btn3:hover {
-                background: rgb(105, 104, 104);
-                content: "";
-                border: none;
-                cursor: pointer;
-                color: white;
-            }
-            
-            .btn4:hover {
-                background: rgb(105, 104, 104);
-                content: "";
-                border: none;
-                cursor: pointer;
-                color: white;
-            }
-            
-            .btn5:hover {
-                background: rgb(105, 104, 104);
-                content: "";
-                border: none;
-                cursor: pointer;
-                color: white;
-            }
-            /*grid starts*/
-            
-            .grid-pictures {
-                width: 1200px;
-                /* height: 1200px; */
-                margin-top: 50px;
-                /* display: grid;
-                grid-template-columns: repeat(3, 1fr); */
-                border: orangered solid 2px;
-                box-sizing: border-box;
-            }
-            /* .grid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-            } */
-            
-            .cell-1,
-            .cell-2,
-            .cell-4,
-            .cell-6 {
-                width: 252px;
-                height: 310px;
-            }
-            
-            .cell-3,
-            .cell-5 {
-                width: 555px;
-                height: 657px;
-            }
-            
-            img {
-                width: 100%;
-                height: 100%;
-            }
-            /*             
-            .leftside-pictures .cell-1 .img,
-            .leftside-pictures .cell-2 .img,
-            .leftside-pictures .cell-3 .img {
-                width: 100%;
-            }
-            
-            .rightside-pictures .cell-4 img,
-            .rightside-pictures .cell-5 img,
-            .rightside-pictures .cell-6 img {
-                width: 100%;
-            } */
-            /*my-portfolio-section ends*/
-            /* .grid-pictures {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas: "a b c" "e d f";
-            } */
-            /* .cell-1 {
-                grid-area: a;
-            }
-            
-            .cell-2 {
-                grid-area: b;
-            }
-            
-            .cell-3 {
-                grid-area: c;
-            }
-            
-            .cell-4 {
-                grid-area: d;
-            }
-            
-            .cell-5 {
-                grid-area: e;
-            }
-            
-            .cell-6 {
-                grid-area: f;
-            } */
-            
-            .gridbox {
-                display: grid;
-                width: 100%;
-                height: 100%;
-                gap: 10px;
-                grid-template-columns: repeat(4, 3fr);
-            }
-            /* .griditems {
-                border: 1px solid black;
-            } */
-            
-            .gridbox>div:nth-child(3) {
-                grid-column: 3/span 4;
-                grid-row: 1/span 3;
-            }
-            
-            .gridbox>div:nth-child(4) {
-                grid-column: 1/span 2;
-                grid-row: 2/span 3;
-            }
+                transform: translate(255px, -18px); */
+                                
+                                .ourteam-grid {
+                                    display: grid;
+                                    margin-top: 75px;
+                                    width: 100%;
+                                    height: 100%;
+                                    border: lavender;
+                                    font-family: 'Lato', sans-serif;
+                                    align-items: center;
+                                    text-align: center;
+                                    gap: 30px;
+                                    grid-template-columns: repeat(3, 3fr);
+                                    position: relative;
+                                }
+                                
+                                .ourteam-grid .item {
+                                    border: 0.01px solid lightgray;
+                                    position: relative;
+                                }
+                                
+                                .ourteam-grid .item h3 {
+                                    margin: 10px 0;
+                                    padding-top: 10px 0px;
+                                }
+                                
+                                .ourteam-grid .item p {
+                                    padding-bottom: 10px;
+                                }
+                                
+                                .ourteam-grid h3 {
+                                    color: rgb(54, 54, 54);
+                                    font-size: 1.4em;
+                                    font-weight: 800;
+                                    margin-top: 0 auto;
+                                }
+                                
+                                .ourteam-grid p {
+                                    color: rgb(63, 63, 63);
+                                    font-weight: 700;
+                                    margin: 0 auto;
+                                }
+                                
+                                .icons:after {
+                                    width: 100%;
+                                    height: 50px;
+                                    bottom: -50px;
+                                    left: 0px;
+                                    background: black;
+                                    position: absolute;
+                                }
+                                
+                                .image-frame {
+                                    overflow: hidden;
+                                    width: 100%;
+                                    height: 450px;
+                                    position: relative;
+                                }
+                                
+                                .overlay {
+                                    content: "";
+                                    width: 100%;
+                                    height: 100%;
+                                    background: rgba(0, 0, 0, 0, );
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    transition: 0.8s;
+                                }
+                                
+                                .image-frame:hover .overlay {
+                                    background: rgba(0, 0, 0, 0.4);
+                                }
+                                
+                                .icons {
+                                    width: 100%;
+                                    font-size: 20px;
+                                    word-spacing: 10px;
+                                    align-items: center;
+                                    padding-top: 5px;
+                                    height: 50px;
+                                    bottom: -50px;
+                                    left: 0px;
+                                    background: black;
+                                    position: absolute;
+                                    transition: 0.5s;
+                                    opacity: 0.8;
+                                    z-index: 2;
+                                }
+                                
+                                .image-frame:hover .icons {
+                                    bottom: 0px;
+                                }
