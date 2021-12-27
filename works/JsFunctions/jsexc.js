@@ -1,18 +1,21 @@
-function numbertostring(n) {
-    n = n + 1
-    n = String(n)
-    console.log(typeof n)
-    return n
-}
-numbertostring()
-
-function increase(n) {
-    n = n - 1
-    n = Number(n)
+function numbertostring(n = String, _default = String) {
     console.log(n)
-    return n
+    return String(n);
+
 }
-increase(4)
+numbertostring(23453)
+
+function increase(n = Number, _default = Number) {
+    console.log(n = n + 1)
+    return Number(n = n + 1)
+}
+increase(3)
+
+function decrease(n = Number, _default = Number) {
+    console.log(n = n - 1);
+    return Number(n = n - 1)
+}
+decrease(4)
 
 function add(x, y) {
     console.log(x + y)
@@ -108,3 +111,8 @@ function combine(word1, word2) {
 
 }
 combine('qatar', 'relsi')
+
+function createcircle(radius = Number, _default = Number) {
+    console.log(radius * 2 * Math.PI)
+}
+createcircle(3)
