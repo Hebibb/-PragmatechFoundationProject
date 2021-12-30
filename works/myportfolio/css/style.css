@@ -432,8 +432,8 @@
                                     align-items: center;
                                     text-align: center;
                                     gap: 30px;
-                                    grid-template-columns: repeat(3, 3fr);
                                     position: relative;
+                                    grid-template-columns: repeat(3, 3fr);
                                 }
                                 
                                 .ourteam-grid .item {
@@ -512,4 +512,39 @@
                                 
                                 .image-frame:hover .icons {
                                     bottom: 0px;
+                                }
+                                /*our team section ends*/
+                                
+                                #get-in-touch-section {
+                                    height: 500px;
+                                    margin: 0 auto;
+                                    background-size: cover;
+                                }
+                                
+                                .get-in-touch-container {
+                                    margin: 0 auto;
+                                }
+                                
+                                .get-in-touch-icons {
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                }
+                                
+                                .get-in-touch-icons i {
+                                    width: 100%;
+                                    font-size: 30px;
+                                    word-spacing: 30px;
+                                    align-items: center;
+                                    padding-top: 5px;
+                                    height: 50px;
+                                    bottom: -50px;
+                                    left: 0px;
+                                }
+                                
+                                .address-icon,
+                                .mob-icon,
+                                .phone-icon,
+                                .address-email {
+                                    background: rgb(37, 37, 37);
                                 }
