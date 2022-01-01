@@ -98,7 +98,7 @@
 
 
 
-function numbertostring(n) {
+/*function numbertostring(n) {
     n = n + 1
     n = String(n)
     console.log(typeof n)
@@ -207,4 +207,40 @@ function combine(word1, word2) {
     return word1 + " " + word2
 
 }
-combine('qatar', 'relsi')
+combine('qatar', 'relsi')*/
+
+//OBJECTS IN JAVASCRIPT
+//let office_crew = ['Jim', 'Michael', 'Dwight', 'Pam', 'Angela', 'Stanley', 'Phillis', 'Creed', 'Andy', 'Kevin', 'Oscar']
+//object dictionary
+//let crew = {
+//  name: 'Jim',
+//surname: 'Helpert',
+//age: 35,
+//marriage_status: function() { if (this.age > 30) { console.log('happy and married!') } else('life is boring') }
+//}
+
+
+//WHILE,FOR,LOOPS
+//let i = 0
+
+//while (i < 10) {
+//  console.log(office_crew[i]) //this shows 10 values in office_crew object from i-0 to i-10
+//i++
+//}
+//for (let i of office_crew) {
+//  console.log(i)
+//}
+let wages = [500, 700, 900, 1500, 1200, 1100, 2500, 4500, 3000, 3250, 450, 550, 750]
+    //show all of wages on screen
+let column = 0;
+while (column < 12) {
+    console.log(wages[column])
+    column++
+}
+for (column of wages) {
+    console.log(column)
+}
+for (column in wages) {
+    console.log(column)
+
+}
