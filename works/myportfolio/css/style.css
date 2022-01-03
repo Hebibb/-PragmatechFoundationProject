@@ -139,6 +139,7 @@ p {
 
 .container {
     min-height: 650px;
+    margin: 0px auto;
 }
 
 .skills {
@@ -146,6 +147,7 @@ p {
     grid-template-columns: 8fr 4fr;
     position: relative;
     transform: translateY(20%);
+    align-items: center;
 }
 
 .header {
@@ -156,6 +158,7 @@ p {
     word-spacing: 0.1px;
     font-family: 'Lato', sans-serif;
     padding-top: 78px;
+    margin-left: 80px;
 }
 
 .myskills-header {
@@ -533,19 +536,35 @@ transform: translate(255px, -18px); */
 
 #getintouch-section {
     width: 1200px;
-    height: 785px;
+    height: 600px;
     margin: 0px auto;
     background-position: center;
     background-size: cover;
 }
 
 .git-container {
-    background-color: rgb(231, 231, 231);
-    margin: 0 auto;
+    margin: 0px auto;
+    align-items: center;
+    text-align: center;
+}
+
+.git-header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    transform: scale(1.2, 1.1);
+    color: rgb(87, 86, 86);
+    word-spacing: 0.1px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 78px;
+    padding-bottom: 10px;
+}
+
+.git-header p {
+    padding-top: 20px;
 }
 
 
-/*form-section section ends*/
+/* getintouch-section ends */
 
 #form-section {
     width: 100%;
@@ -632,7 +651,7 @@ textarea {
 /*form-section ends*/
 
 #footer-area {
-    background-color: black;
+    background-color: rgb(17, 17, 17);
     width: 100%;
     height: 500px;
 }
@@ -641,16 +660,17 @@ textarea {
     margin: 0px auto;
     width: 1200px;
     height: inherit;
-    padding: 30px;
     box-sizing: border-box;
     text-align: center;
+    align-items: center;
 }
 
 .footer-adsund {
     text-align: center;
+    padding-bottom: 15px;
 }
 
-.footer-container span {
+.footer-adsund span {
     text-align: center;
     cursor: pointer;
     letter-spacing: 0.5px;
@@ -661,13 +681,39 @@ textarea {
     font-stretch: ultra-expanded;
 }
 
+.info-adds p {
+    margin: 0 auto;
+}
+
 .info-adds {
     display: flex;
     width: 100%;
     border-bottom: lavender 0.1px solid;
     padding-bottom: 50px;
-    margin-top: 35px;
+    box-sizing: border-box;
+}
+
+.logo-part {
+    padding-top: 80px;
+}
+
+.info-adds ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
     text-align: center;
+    padding: 0px 15%;
+    color: ivory;
+}
+
+.info-adds li {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.info-adds li i {
+    padding: 0px 20px;
 }
 
 
@@ -691,3 +737,45 @@ textarea {
 .dev-address {
     display: flex;
 } */
+
+.social-apps {
+    color: ivory;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.social-apps {
+    margin-top: 90px;
+    transform: translateX(40%);
+}
+
+.app1 {
+    border: solid 1px ivory;
+    border-radius: 50%;
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+.app2 {
+    border: solid 1px ivory;
+    border-radius: 50%;
+    padding: 1px 6px;
+    margin: 0px 10px;
+}
+
+.app3 {
+    border: solid 1px ivory;
+    border-radius: 50%;
+    padding: 1px 9px;
+    margin: 0px 10px;
+}
+
+.app4 {
+    border: solid 1px ivory;
+    border-radius: 50%;
+    padding: 1px 7px;
+    margin: 0px 10px;
+}
