@@ -230,17 +230,67 @@ combine('qatar', 'relsi')*/
 //for (let i of office_crew) {
 //  console.log(i)
 //}
-let wages = [500, 700, 900, 1500, 1200, 1100, 2500, 4500, 3000, 3250, 450, 550, 750]
-    //show all of wages on screen
-let column = 0;
-while (column < 12) {
-    console.log(wages[column])
-    column++
-}
-for (column of wages) {
-    console.log(column)
-}
-for (column in wages) {
-    console.log(column)
 
-}
+//show all of wages on screen
+//while (column < 12) {
+//   console.log(wages[column])
+// column++
+//}
+//for (column of wages) {
+// console.log(column)
+//column++
+//}
+//for (column of wages) {
+//  console.log(column)
+//}
+//console.log(wages.length) //shows count of columns
+//you can also use wages.length in loops
+//while (column <= wages.length) {
+//  console.log(column)
+//column++
+//}
+//you can also write 
+//for (let column = 0; column < wages.length; column++) {
+//  if (wages[column] > 900 && wages[column] < 2000) {
+//    console.log(column, wages[column])
+// }
+//}
+//to add function in loops
+//let wagesum = 0
+
+//}
+//for (let column = 0; column < wages.length; column++) {
+//  wagesum += wages[column]
+
+//}
+//console.log(wagesum / wages.length)
+
+
+//let wages = [500, 700, 900, 1500, 1200, 1100, 2500, 4500, 3000, 3250, 450, 550, 750, 1000]
+// let cem = 0;
+// for (i = 0; i < 14; i++) {
+//     cem = cem + wages[i]
+// }
+// console.log(cem / wages.length)
+//TO WRITE SAME THING WITH FOR IN LOOP
+// let cem = 0
+// for (i = 0; i < 30; i++) {
+//     cem += Math.pow(3, i);
+//     cem = cem / 30
+// }
+// console.log(cem)
+//let cem = 0
+//for (i = 0; i < 30; i++) {
+//  console.log(Math.pow(3, i))
+//}
+//ARRAYS
+//push
+//let arr = []
+//arr.push('Jim')
+//arr.push('Dwight')
+//to make dynamic adding new values to array
+//for (i = 0; i < 5; i++) {
+//  let newmember = prompt('please add new member to your paper company')
+//arr.push(newmember)
+//}
+//console.log(arr)
