@@ -49,7 +49,7 @@
 .btn1:hover {
     background: rgb(105, 104, 104);
     content: "";
-    border: none;
+    border: rgb(105, 104, 104);
     cursor: pointer;
 }
 
