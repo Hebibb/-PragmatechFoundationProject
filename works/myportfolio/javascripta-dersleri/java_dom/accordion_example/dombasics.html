@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dombasics.css">
+    <title>Document</title>
+    <script src="dombasics.js"></script>
+
+</head>
+
+<body>
+    <!---->
+    <h1 class="dunya" onclick="myfunction()">Salam</h1>
+    <h1 id="dunya " onclick="myfunction()">Salam</h1>
+
+    <form name=registration>
+        <label for="firstname">Firstname:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="John" />
+        <label for="Surname ">Surname:</label>
+        <input type="text " name="surname " id="surname " placeholder="Walker " />
+        <button type="submit " name="send " id="send " onclick="greeting()">Submit </button>
+
+
+
+    </form>
+
+    <script>
+        let x = document.getElementsByTagName('h1')[0].innerHTML = 'give your info'; //gets first h1 tagname and writes string in it
+        let y = document.getElementById('dunya ').innerHTML = 'come on!'; //gets
+
+        function myfunction() {
+            console.log(x);
+        }
+        let z = document.registration.name.value;
+        let t = document.registration.walker.value;
+
+
+
+        function greeting() {
+            let z = document.registration.firstname.value;
+
+            alert(z + ' ' + ' ' + 'welcome!')
+        }
+    </script>
+</body>
+
+</html>
