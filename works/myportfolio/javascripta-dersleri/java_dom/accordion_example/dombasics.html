@@ -12,39 +12,30 @@
 </head>
 
 <body>
-    <!---->
-    <h1 class="dunya" onclick="myfunction()">Salam</h1>
-    <h1 id="dunya " onclick="myfunction()">Salam</h1>
+    <h1 id="form-header">Form Template</h1>
+    <form action="">
+        <input type="name" name="firstname" id="firstname" value="firstname">
+        <input type="surname" name="surname" value="surname" id="surname">
+        <input type="email" name="email" value="email" id="email">
+        <input type="tel" name="tel" value="tel" id="tel" onclick="removetel()">
+        <button type="submit" name="submit" value="submit" id="send" onclick="showfirstname()">Send</button>
+        <a href="http://www.javatpoint.com/" id="link" onclick="newsite()"> javaTpoint.com </a>
+        <input type="text" name="account_name" value="account_name" id='account_name' onclick="changesome()">
+        <button type="submit" name="submit" class="change" onclick="changecolor()">Changecolor</button>
+        <button type="submit" name="submit" class="change_" id="change">Changecolor</button>
+        <br>
 
-    <form name=registration>
-        <label for="firstname">Firstname:</label>
-        <input type="text" name="firstname" id="firstname" placeholder="John" />
-        <label for="Surname ">Surname:</label>
-        <input type="text " name="surname " id="surname " placeholder="Walker " />
-        <button type="submit " name="send " id="send " onclick="greeting()">Submit </button>
-
+        <button class="reddit" onclick="reddening()">reddit</button>
+        <h1 class="header">MY header</h1>
 
 
     </form>
-
-    <script>
-        let x = document.getElementsByTagName('h1')[0].innerHTML = 'give your info'; //gets first h1 tagname and writes string in it
-        let y = document.getElementById('dunya ').innerHTML = 'come on!'; //gets
-
-        function myfunction() {
-            console.log(x);
-        }
-        let z = document.registration.name.value;
-        let t = document.registration.walker.value;
+    <br>
+    <br>
+    <br>
+    <button class="div_creater" onclick="getdiv()">enlarge me</button>
 
 
-
-        function greeting() {
-            let z = document.registration.firstname.value;
-
-            alert(z + ' ' + ' ' + 'welcome!')
-        }
-    </script>
 </body>
 
 </html>
