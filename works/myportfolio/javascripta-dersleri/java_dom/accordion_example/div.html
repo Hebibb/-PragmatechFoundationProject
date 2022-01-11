@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="div.css">
+    <title>Document</title>
+    <script src="div.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>HOW TO ADD DIVE AND STYLE WHEN CLICKING
+
+        </h1>
+        <p>to give div </p>
+        <button id="click" onclick="showimg()">click me</button>
+        <br>
+        <br>
+        <br>
+        <div id="kolge"></div>
+
+        <div id="flower_div">
+            <img alt="" id="flower">
+            <div class="btn1">
+                <button id="close" onclick="closeimg()">Close</button>
+            </div>
+
+        </div>
+        <script>
+            let image = document.getElementById('flower');
+            let imij = document.getElementById('flower_div');
+            let kolgem = document.getElementById('kolge')
+
+            function showimg() {
+                let image = document.getElementById('flower');
+                image.setAttribute('src', 'popupimage/marguerite-729510__480.webp');
+                let kolgem = document.getElementById('kolge')
+                kolgem.setAttribute('class', 'kolge')
+                let btn = document.querySelector('#click').style.display = 'none';
+                let imij = document.getElementById('flower_div');
+                imij.style.border = 'rgba(214, 6, 6, 0.4) 20px solid';
+                imij.style.transition = '0.5s';
+                let closename = document.getElementById('close');
+                closename.className = 'closed';
+                closename.style.display = "block"
+                    // closename.innerHTML = 'close';
+
+
+            }
+
+            function closeimg() {
+                image.remove()
+                imij.remove()
+                kolgem.remove()
+                    // console.log('salam');
+
+
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>
