@@ -13,6 +13,7 @@
     padding: 0 20px;
     transition: 0.5s;
     cursor: pointer;
+    border-top: rgb(71, 67, 68) solid 3px;
 }
 
 .accord:hover {
@@ -30,18 +31,30 @@ button {
     background: none;
 }
 
-i {
+.plus {
     box-sizing: border-box;
+    right: 0px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.minus {
     right: 0px;
 }
 
 .sibling {
     height: 0;
-    width: 1138px;
+    width: 1050px;
     height: 0;
     background: none;
     color: rgb(85, 84, 84);
     overflow: hidden;
     transition: 0.7s;
-    border-bottom: rgb(71, 67, 68) solid 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subcontent {
+    width: 1000px;
+    padding-right: 40px;
 }

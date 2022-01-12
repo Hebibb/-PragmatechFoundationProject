@@ -11,10 +11,21 @@ for (i = 0; i < accordion.length; i++) {
 
         /* Toggle between hiding and showing the active panel */
         var panel = this.nextElementSibling;
+        var plus = document.getElementById('plus')
+        var digerplus = plus.nextElementSibling
+
+
         if (panel.style.height === "0px") {
             panel.style.height = "60px";
+            panel.style.transition = '0.7s';
+
+            plus.style.color = "rgba(0, 0, 0, 0.0)"
+            plus.style.transition = "0.7s"
+
         } else {
             panel.style.height = "0px";
+            plus.style.color = 'black';
         }
+
     });
 }
