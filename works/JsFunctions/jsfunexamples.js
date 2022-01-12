@@ -22,3 +22,13 @@ function yolkaninyanmasi(no) {
 }
 yolkaninyanmasi(5)*/
 //IF THERE IS NO RETURN STATEMENT IN FUNCTION WE WILL CALL IT VOID(ICRACI) FUNCTION
+
+
+//CREATING OBJECT IN JS
+let maaslar = [300, 500, 750, 800, 900, 5000, 3000, 2000, 1400, 500, 700, 650] //butun maaslar ekranda gosterilsin
+    //while
+let sira = 0;
+while (sira < 12) {
+    console.log(maaslar[sira]);
+    sira++
+}

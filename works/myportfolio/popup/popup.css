@@ -1,14 +1,24 @@
 #container {
+    margin: 0 auto;
     width: 100vw;
     height: 100vh;
+    position: relative;
     justify-content: center;
+}
+
+.imageframe {
+    width: 800px;
+    height: 700px;
+    display: grid;
+    grid-column: ;
 }
 
 h1 {
     object-position: center;
 }
 
-#kolge {
+
+/* #kolge {
     display: none;
     position: relative;
     margin: 0 auto;
@@ -38,7 +48,9 @@ h1 {
 
 #close {
     /* display: none; */
-    position: absolute;
+
+
+/* position: absolute;
     box-sizing: border-box;
     right: 50%;
     top: 30%;
@@ -57,4 +69,4 @@ h1 {
 .btn1 {
     right: 0;
     top: 0;
-}
+}  */
