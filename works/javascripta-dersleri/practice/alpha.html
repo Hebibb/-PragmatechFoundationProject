@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alpha.css">
+    <title>Document</title>
+    <script src="alpha.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="mydiv" onclick="baslat()"></div>
+    </div>
+
+    <script>
+        function baslat() {
+            let qutu = document.getElementById('mydiv')
+            let min = 300 * Math.random();
+            let max = 1000 * Math.random();
+            let randomw = Math.floor(Math.random() * (max - min) + min);
+            let randomh = Math.floor(Math.random() * (max - min) + min);
+            let leftwall = Math.random() * window.innerWidth;
+            let topwall = Math.random() * window.innerHeight;
+            let redcol = Math.round(Math.random() * 255)
+            let greencol = Math.round(Math.random() * 255)
+            let bluecol = Math.round(Math.random() * 255)
+
+            let reng = qutu.style.backgroundcolor = 'rgb' + `(${redcol},${greencol},${bluecol})`;
+            let i = 0
+
+            qutu.style.width = randomw + "px";
+            qutu.style.height = randomh + "px";
+            qutu.style.transition = '0.7s';
+            qutu.style.position = 'absolute';
+            qutu.style.left = leftwall + 'px';
+            qutu.style.top = topwall + 'px';
+            reng
+            console.log('salam');
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // while (true) {
+        //     command = qutu.onclick;
+        //     if (command == true) {
+        // qutu.addEventListener('click', function() {
+        //     qutu.style.width = randomw + "px";
+        //     qutu.style.height = randomh + "px";
+        //     qutu.style.transition = '0.7s';
+        //     qutu.style.position = 'absolute';
+        //     qutu.style.left = leftwall + 'px';
+        //     qutu.style.top = topwall + 'px';
+        //     qutu.style.color = reng;
+        //     console.log('slams');
+        // })
+
+        //     }
+        // }
+
+
+
+
+
+
+
+
+        //     console.log(randomw, randomh);
+        //     qutu.addEventListener('click', function() {
+
+        //         qutu.style.width = randomw + "px";
+        //         qutu.style.height = randomh + "px";
+        //         qutu.style.transition = '0.7s';
+        //         qutu.style.position = 'absolute';
+        //         qutu.style.left = leftwall + 'px';
+        //         qutu.style.top = topwall + 'px';
+        //         qutu.style.color = reng;
+
+        // })
+
+        // qutu.style.color = "rgb" + "(" + redcol + "," + greencol + "," + bluecol + ")";
+
+
+
+
+        // qutu.style.color = 'rgb' + (`${redcol} ${greencol} ${bluecol}`);
+
+
+
+        // function baslat() {
+        //     qutu.style.width = randomw + "px";
+        //     qutu.style.height = randomh + "px";
+        //     qutu.style.transition = '0.7s';
+        //     qutu.style.position = 'absolute';
+        //     qutu.style.left = leftwall + 'px';
+        //     qutu.style.top = topwall + 'px';
+
+
+        // }
+    </script>
+</body>
+
+</html>

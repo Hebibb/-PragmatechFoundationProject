@@ -1,16 +1,33 @@
-let a = prompt('giris bali')
-let b = prompt('imtahan bali')
-let giris_bali = parseInt(a)
-let imtahan_bali = parseInt(b)
+let arr = []
 
-if ((giris_bali >= 0) && (imtahan_bali >= 50)) {
-    if ((giris_bali <= 100) && (imtahan_bali <= 100)) {
-        if (((giris_bali * 0.4) + (imtahan_bali * 0.6)) >= 50) {
+// for (let i = 0; i < 5; i++) {
+//     let isciAdi = prompt('Iscinin adini daxil et')
+//     let isciSoyadi = prompt('Soyadini daxil et')
+//     let isciYasi = prompt('Yasini daxil et')
+//     let isci = {
+//         ad: isciAdi,
+//         soyad: isciSoyadi,
+//         yas: isciYasi
+//     }
+//     arr.push(isci)
+// }
+// console.log(arr)
 
-            alert('imtahandan kecdiniz')
+while (true) {
+    emr = confirm('Yeni isci elave edilsin mi?')
 
-
+    if (emr == true) {
+        let isciAdi = prompt('Iscinin adini daxil et')
+        let isciSoyadi = prompt('Soyadini daxil et')
+        let isciYasi = prompt('Yasini daxil et')
+        let isci = {
+            ad: isciAdi,
+            soyad: isciSoyadi,
+            yas: isciYasi
         }
+        arr.push(isci)
+    } else {
+        console.log(arr)
+        break
     }
-
-} else { alert('kesildiniz') }
+}

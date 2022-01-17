@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myportfolio_test.css">
+    <script src="myportfolio_test.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <section>
+        <div id="to_main" onclick="go_up()">
+            <i class="fad fa-arrow-up"></i>
+        </div>
+    </section>
+    <section>
+
+    </section>
+
+    <script>
+        let main_menu = document.getElementById('to_main');
+
+
+        function go_up() {
+
+            let terpen = window.scrollTo(0, 0);
+            if (terpen = true) {
+                document.getElementById('to_main').style.display = 'none';
+                document.getElementById('to_main').style.transition = '0.9s ease ';
+            }
+        }
+        window.addEventListener("scroll", myScrollFunc());
+        var myScrollFunc = function() {
+            var y = window.scrollY;
+            if (y >= 800) {
+                document.getElementById('to_main').style.backgroundColor = 'black';
+            } else {
+                document.getElementById('to_main').style.display = 'none';
+                document.getElementById('to_main').style.transition = '0.5s';
+
+            }
+        };
+
+       
+
+
+
+
+
+        // let goster = window.pageYOffset;
+
+        // if (goster >= 500) {
+        //     document.getElementById('to_main').style.backgroundColor = 'black';
+        // }
+
+        // window.addEventListener('scroll', function() {
+        //     let goster = window.pageYOffset;
+
+        //     if (goster >= 500) {
+        //         document.getElementById('to_main').style.display = 'black';
+        //     }
+
+        // })
+    </script>
+
+</body>
+
+</html>

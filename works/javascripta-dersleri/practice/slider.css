@@ -1,0 +1,51 @@
+.sub-container {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide1 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/imageler/backgroundphoto.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide2 {
+    width: 100vw;
+    height: 600px;
+    background-image: url(/imageler/backgroundphoto.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide3 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/imageler/backgroundphoto.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.navigation-bars div {
+    border: 2px solid black;
+}
