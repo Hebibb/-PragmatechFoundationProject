@@ -1,0 +1,1 @@
+TURK='man turke'
