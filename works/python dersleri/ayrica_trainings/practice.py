@@ -1,4 +1,4 @@
-#FIRSTDAYOFPYTHON HOMEWORK
+# FIRSTDAYOFPYTHON HOMEWORK
 # x=eval(input('input first operand:'))#evaluating default data type of builtin functions
 
 # y=eval(input('second operand:')) 
@@ -8,17 +8,21 @@
 # adimiz=input('adinizi daxil edin:')
 # tersi=adimiz[::-1]
 # print('adinizin tersi'+tersi)
-boyukdur='TamAmDir'
-boyukler=list(boyukdur)
 
 
 
+elaveler=[]
 for x in range(8):
+    boyukdur='TamAmDir'
+    boyukler=list(boyukdur)
     boyuyun=boyukler[x].isupper()
     c=0
     print(c+boyuyun)
     tekrarlar=c+boyuyun
-    print(type(boyuyun))
+    
+    elaveler.append(tekrarlar)
+    print(type(elaveler))
+    
     
     
    
