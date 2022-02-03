@@ -1,1 +1,0 @@
-print(open('py_fhandling','r'))
