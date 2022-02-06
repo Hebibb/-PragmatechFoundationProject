@@ -180,10 +180,11 @@
             </div>
 
             <div class="ourteam-grid">
+                {{% for ourteam in ourteam_list %}}
                 <div class="item">
                     <div class="image-frame">
                         <div class="overlay"></div>
-                        <img src="static/images/team-2.jpg" alt="">
+                        <img src="{{ourteam.image}}" alt="">
                         <div class="icons">
                             <i class="fab fa-facebook" id="ikona"></i>
                             <i class="fab fa-twitter" id="ikona"></i>
@@ -193,45 +194,12 @@
 
                     </div>
 
-                    <h3>JOHN DOWE</h3>
-                    <p>Front-end</p>
+                    <h3>{{ourteam.name}}</h3>
+                    <p>{{ourteam.profession}}</p>
 
 
                 </div>
-                <div class="item">
-                    <div class="overlay"></div>
-                    <div class="image-frame">
-                        <div class="overlay"></div>
-                        <img src="static/images/team-3.jpg" alt="">
-                        <div class="icons">
-                            <i class="fab fa-facebook" id="ikona"></i>
-                            <i class="fab fa-twitter" id="ikona"></i>
-                            <i class="fab fa-tiktok" id="ikona"></i>
-                            <i class="fab fa-instagram" id="ikona"></i>
-                        </div>
-                    </div>
-                    <h3>NATALY JAN</h3>
-                    <p>Front-end</p>
-                </div>
-                <div class="item">
-                    <div class="image-frame">
-                        <div class="overlay"></div>
-                        <img src="static/images/team-1.jpg" alt="">
-                        <div class="icons">
-                            <i class="fab fa-facebook" id="ikona"></i>
-                            <i class="fab fa-twitter" id="ikona"></i>
-                            <i class="fab fa-tiktok" id="ikona"></i>
-                            <i class="fab fa-instagram" id="ikona"></i>
-                        </div>
-
-                    </div>
-
-                    <h3>JULIETTE SWIFT</h3>
-                    <p>Front-end</p>
-
-
-
-                </div>
+               {{% endfor %}}
 
             </div>
         </div>
