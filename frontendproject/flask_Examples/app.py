@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request
 
 app= Flask(__name__)
 
@@ -93,36 +93,32 @@ Connection=[
         'Hotline (+994) 50 764 36 26',
         'bhabib95@gmail.com',
         'location')
-    
+ 
 ]
         
-        
-
-
-
-
-       
-        
-
-
-
-
-
-
-
-
+users=[]
 @app.route("/",methods=['GET','POST'])
 def index():
+    if request.method=='POST':
+        _ad=request.form['ad ']
+        _soyad=request.form['soyad ']
+        _telefon=request.form['telefon ']
+        _email=request.form['email ']
+        _message=request.form['message ']
+        user={
+            'ad':_ad,
+            'soyad':_soyad,
+            'telefon':_telefon,
+            'email':_email,
+            'message':_message,
+        }
+        users.append(user)
+        return render_template('admin/add.html',istifadeciler=users)
     return render_template('app/index.html', skill_list=skill_list, ourteam_list=ourteam_list)
 
 @app.route("/admin",methods=['GET','POST'])
 def admin_index():
     return render_template('admin/index.html')
-
-
-
-
-
 
 
 if __name__=='__main__':
